@@ -1,0 +1,46 @@
+body {
+    header {
+        .logo-contact {
+            text-align: center;
+            .items {
+                background-color: #FFFFFF;
+                .item1 {
+                    @include breakpoint(desktop) {
+                        padding-right: 15%;
+                    }
+                    @include breakpoint(tablet) {
+                        padding-right: 15%;
+                    }
+                }
+                .item3 {
+                    margin-top: 13px;
+                    @include breakpoint(desktop) {
+                        padding-left: 15%;
+                    }
+                    @include breakpoint(tablet) {
+                        padding-left: 15%;
+                    }
+                    i {
+                        position: absolute;
+                        left: 48%;
+                        top: 23%;
+                        font-size: 16px;
+                        -webkit-transform: rotate(90deg);
+                        color: #006EAF;
+                        @include breakpoint(phone) {
+                            top: 46px;
+                        }
+                        @include breakpoint(tablet) {
+                            left: 28%;
+                        }
+                    }
+                    p {
+                        font-size: 26px;
+                        color: #828282;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}

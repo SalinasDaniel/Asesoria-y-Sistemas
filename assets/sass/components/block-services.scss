@@ -1,0 +1,82 @@
+body {
+    main {
+        .block-services {
+            background-color: #EFEFEF;
+            @include breakpoint(phone) {
+                padding-bottom: 20%;
+            }
+            .image-description {
+                margin-right: 0;
+                .image {
+                    padding-left: 0;
+                    img {
+                        @include breakpoint(phone) {
+                            width: 104%;
+                        }
+                        @include breakpoint(tablet) {
+                            width: 113%;
+                        }
+                        @media screen and (min-width: 1900px) {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            .description {
+                @include breakpoint(phone) {
+                    margin-top: 69px;
+                    padding-left: 9%;
+                }
+                @include breakpoint(tablet) {
+                    margin-top: 60px;
+                }
+                @include breakpoint(desktop) {
+                    margin-top: 174px;
+                }
+                p {
+                    line-height: 1;
+                    color: #006EAF;
+                    margin-bottom: 0;
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: bold;
+                    @include breakpoint(phone) {
+                        font-size: 35px;
+                    }
+                    @include breakpoint(tablet) {
+                        font-size: 34px;
+                        margin-left: 7%;
+                    }
+                    @include breakpoint(desktop) {
+                        font-size: 44px;
+                    }
+                }
+                span {
+                    color: #006EAF;
+                    font-size: 30px;
+                    font-weight: bold;
+                    @include breakpoint(tablet) {
+                        margin-left: 7%;
+                    }
+                }
+                ul {
+                    margin-top: 25px;
+                    @include breakpoint(phone) {
+                        margin-left: 0;
+                    }
+                    @include breakpoint(desktop) {
+                        margin-left: 0;
+                    }
+                    li {
+                        color: #828282;
+                        font-size: 22px;
+                        font-weight: bold;
+                        margin-bottom: 12px;
+                        img {
+                            margin-right: 1%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

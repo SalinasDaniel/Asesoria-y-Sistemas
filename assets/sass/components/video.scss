@@ -1,0 +1,37 @@
+body {
+    main {
+        .video {
+            text-align: center;
+            padding-bottom: 10%;
+            background-image: url('../../assets/images/Fondo-Items-2.jpg');
+            background-size: cover;
+            .row {
+                .item {
+                    iframe {
+                        width: 82%;
+                        height: 608px;
+                        @include breakpoint(phone) {
+                            height: 136px;
+                        }
+                        @include breakpoint(tablet) {
+                            height: 340px;
+                        }
+                    }
+                }
+                .btn {
+                    background-color: #ED2B10;
+                    color: #FFFFFF;
+                    border: solid 1px #ED2B10;
+                    font-weight: bold;
+                    font-size: 19px;
+                    margin-top: 45px;
+                    transition: 1s;
+                }
+                .btn:hover {
+                    background-color: #FFFFFF;
+                    color: #ED2B10;
+                }
+            }
+        }
+    }
+}

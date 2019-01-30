@@ -1,0 +1,123 @@
+body {
+    main {
+        .col-column {
+            background-image: url('../../assets/images/Fondo-Columna.jpg');
+            background-size: cover;
+            color: #006EAF;
+            padding-top: 5%;
+            padding-bottom: 5%;
+            @include breakpoint(phone) {
+                padding-top: 10%;
+            }
+            .items {
+                .item-1 {
+                    padding-right: 0;
+                    img {
+                        @include breakpoint(tablet) {
+                            width: 160%;
+                            margin-left: -60%;
+                        }
+                        @include breakpoint(desktop) {
+                            width: 122%;
+                            margin-left: -22%;
+                        }
+                    }
+                }
+                .item-2 {
+                    text-align: left;
+                    padding-left: 9%;
+                    padding-right: 5%;
+                    p {
+                        margin-bottom: 0;
+                        font-size: 34px;
+                        @include breakpoint(phone) {
+                            font-size: 18px;
+                        }
+                        @include breakpoint(tablet) {
+                            font-size: 26px;
+                        }
+                    }
+                    h2 {
+                        font-size: 44px;
+                        font-weight: bold;
+                        strong {
+                            font-family: 'Roboto', sans-serif;
+                        }
+                        @include breakpoint(phone) {
+                            font-size: 21px;
+                        }
+                        @include breakpoint(tablet) {
+                            font-size: 28px;
+                        }
+                    }
+                    .btn {
+                        background-color: transparent;
+                        color: #BA171E;
+                        border: solid 1px #BA171E;
+                        transition: 1s;
+                        font-weight: bold;
+                        margin-top: 20px;
+                        @include breakpoint(phone) {
+                            margin-bottom: 30px;
+                        }
+                    }
+                    .btn:hover {
+                        background-color: #BA171E;
+                        color: #FFFFFF;
+                    }
+                }
+            }
+        }
+        .colum {
+            background-image: url('../../assets/images/Fondo-Columna-2.jpg');
+            .items {
+                .item-2 {
+                    text-align: center;
+                    padding-left: 28%;
+                    padding-right: 28%;
+                    @include breakpoint(phone) {
+                        padding-left: 9%;
+                        padding-right: 9%;
+                    }
+                    @media screen and (min-width: 1900px) {
+                        padding-left: 36%;
+                        padding-right: 36%;
+                    }
+                    h2 {
+                        font-size: 33px;
+                        font-weight: normal;
+                        strong {
+                            font-size: 53px;
+                        }
+                    }
+                    .btn {
+                        background-color: #ED2B10;
+                        color: #FFFFFF;
+                        font-weight: bold;
+                        border-radius: 8px;
+                        font-size: 25px;
+                    }
+                    .btn:hover {
+                        background-color: #FFFFFF;
+                        color: #ED2B10;
+                    }
+                }
+            }
+        }
+        .colum-2 {
+            background-image: none;
+            .item-2 {
+                h2 {
+                    font-family: 'Roboto', sans-serif;
+                }
+            }
+            .btn {
+                font-size: 27px;
+                font-family: 'Roboto', sans-serif;
+                @include breakpoint(phone) {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}

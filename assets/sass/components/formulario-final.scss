@@ -1,0 +1,97 @@
+body {
+    main {
+        .formulario-final {
+            background: linear-gradient(to top, #006EAF 0%, #002856 100%);
+            color: #006EAF;
+            .form-description {
+                margin-right: 0;
+                margin-left: 0;
+                padding-right: 7%;
+                padding-left: 7%;
+                padding-top: 8%;
+                padding-bottom: 8%;
+                @include breakpoint (phone) {
+                    padding-top: 25%;
+                    padding-bottom: 25%;
+                }
+                .description {
+                    background-image: url('../../assets/images/fondo-form.jpg');
+                    background-size: cover;
+                    border-radius: 22px;
+                    padding-left: 11%;
+                    padding-right: 11%;
+                    padding-top: 9%;
+                    padding-bottom: 6%;
+                    p {
+                        line-height: 1;
+                        padding-right: 10%;
+                        strong {
+                            font-family: 'Roboto', sans-serif;
+                            font-size: 48px;
+                            @include breakpoint(phone) {
+                                font-size: 38px;
+                            }
+                        }
+                        @include breakpoint(phone) {
+                            font-size: 24px;
+                        }
+                        @include breakpoint(tablet) {
+                            font-size: 32px;
+                        }
+                        @include breakpoint(desktop) {
+                            font-size: 37px;
+                        }
+                    }
+                }
+                .form {
+                    @include breakpoint(phone) {
+                        margin-top: 30px;
+                        padding-right: 0;
+                        padding-left: 0;
+                    }
+                    form {
+                        background-color: #FFFFFF;
+                        padding-top: 13%;
+                        padding-left: 9%;
+                        padding-right: 9%;
+                        border-radius: 22px;
+                        padding-bottom: 15%;
+                        text-align: center;
+                        p {
+                            font-size: 30px;
+                            margin-bottom: 30px;
+                            font-weight: bold;
+                            strong {
+                                font-family: 'Roboto', sans-serif;
+                                font-size: 50px
+                            }
+                        }
+                        i {
+                            font-size: 50px;
+                        }
+                        input {
+                            border-radius: 6px;
+                            margin-bottom: 17px;
+                            height: 50px;
+                        }
+                    }
+                    .bton {
+                        width: 100%;
+                        background-color: #ED2B10;
+                        color: #FFFFFF;
+                        height: 50px;
+                        transition: 1s;
+                        font-size: 25px;
+                        border-radius: 6px;
+                        font-weight: bold;
+                    }
+                    .bton:hover {
+                        background-color: #FFFFFF;
+                        color: #ED2B10;
+                        border: solid 1px #ED2B10;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,101 @@
+body {
+    main {
+        .steps {
+            text-align: center;
+            padding-top: 10%;
+            background-image: url('../../assets/images/Fondo-Pasos.jpg');
+            background-size: cover;
+            color: #FFFFFF;
+            height: 770px;
+            @include breakpoint(phone) {
+                height: auto;
+                padding-bottom: 20%;
+            }
+            @include breakpoint(tablet) {
+                height: 715px;
+            }
+            h2 {
+                font-weight: bold;
+                font-size: 58px;
+                font-family: 'Roboto', sans-serif;
+                @include breakpoint(phone) {
+                    margin-top: 40px;
+                    font-size: 29px;
+                }
+            }
+            .subtitle {
+                font-size: 24px;
+                font-weight: bold;
+            }
+            .items {
+                margin-top: 100px;
+                padding-left: 10%;
+                padding-right: 10%;
+                hr {
+                    background: linear-gradient(to right, #BA8343 0%, #DBAC4A 100%);
+                    width: 60%;
+                    position: absolute;
+                    margin-top: 53px;
+                    margin-left: 10%;
+                    border: dashed;
+                    @include breakpoint(phone) {
+                        display: none;
+                    }
+                    @media screen and (min-width: 1900px) {
+                        width: 58%;
+                    }
+                }
+                .item {
+                    @include breakpoint(phone) {
+                        margin-bottom: 44px;
+                    }
+                    .num {
+                        width: 108px;
+                        height: 108px;
+                        background-color: #FFFFFF;
+                        border-radius: 53px;
+                        margin-bottom: 13px;
+                        padding-top: 4%;
+                        margin-left: 25%;
+                        @include breakpoint(phone) {
+                            margin-left: 30%;
+                        }
+                        @include breakpoint(desktop) {
+                            margin-left: 33%;
+                        }
+                        @media screen and (min-width: 1900px) {
+                            margin-left: 38%;
+                        }
+                        span {
+                            font-size: 55px;
+                            color: #BA171E;
+                        }
+                    }
+                    p {
+                        font-size: 20px;
+                        font-weight: bold;
+                        @include breakpoint(tablet) {
+                            font-size: 19px;
+                        }
+                    }
+                }
+            }
+            .btn {
+                margin-top: 200px;
+                background-color: #ED2B10;
+                color: #FFFFFF;
+                font-size: 23px;
+                font-weight: bold;
+                border-radius: 10px;
+                transition: 1s;
+                @include breakpoint(phone) {
+                    margin-top: 0;
+                }
+            }
+            .btn:hover {
+                background-color: #FFFFFF;
+                color: #ED2B10;
+            }
+        }
+    }
+}
